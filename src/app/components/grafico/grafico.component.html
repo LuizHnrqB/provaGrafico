@@ -1,0 +1,33 @@
+<div class="graficoWrapper">
+  <div class="selectWrappers">
+    <mat-form-field>
+      <mat-label>Tipo</mat-label>
+      <mat-select (selectionChange)="onSelect($event)">
+        <mat-option *ngFor="let item of selectList" [value]="item">{{
+          item
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Produto</mat-label>
+      <mat-select (selectionChange)="onSelectProduto($event)">
+        <mat-option *ngFor="let item of produtoLista" [value]="item">{{
+          item
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Marca</mat-label>
+      <mat-select (selectionChange)="onSelectMarca($event)">
+        <mat-option *ngFor="let item of filterData" [value]="item.nome">{{
+          item.nome
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div>
+    <canvas #myChart></canvas>
+  </div>
+</div>

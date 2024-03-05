@@ -1,0 +1,46 @@
+$primary: #2596be;
+$fontColor: #fff;
+$circleColor: red;
+$circleSize: 25px;
+$fontSizeTitle: 2.5rem;
+$fontSizep: 1.5rem;
+
+.navbar {
+  font-weight: normal;
+  color: $fontColor;
+  width: 100%;
+  background-color: $primary;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  font-size: $fontSizep;
+  left: 0;
+  top: 0;
+  height: 60px;
+  margin-bottom: 3rem;
+}
+.nav1 {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sales {
+  position: relative;
+  left: 65%;
+}
+.circle {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: $circleSize;
+  height: $circleSize;
+  background-color: $circleColor;
+  border-radius: 50%;
+}
+.title {
+  position: relative;
+  left: 42%;
+  font-size: $fontSizeTitle;
+}
